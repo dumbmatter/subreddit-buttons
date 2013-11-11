@@ -1,9 +1,11 @@
-UNOFFICIAL GITHUB BUTTONS
-=========================
+UNOFFICIAL SUBREDDIT BUTTONS
+============================
 
-Showcase your GitHub (repo's) success with these three simple, static buttons featuring dynamic watch, fork and follower counts and a link to your GitHub repo or profile page.
+Showcase your subreddit's success with these simple, static buttons featuring dynamic subscriber counts and a link to your subreddit.
 
 To get started, checkout http://ghbtns.com!
+
+This is based on Mark Otto's GitHub buttons: https://github.com/mdo/github-buttons
 
 
 
@@ -13,81 +15,64 @@ Usage
 These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=SUBREDDIT"
+  allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
 ```
 
 ### Requirements
 
-`user`<br>
-GitHub username that owns the repo<br>
-
-`repo`<br>
-GitHub repository to pull the forks and watchers counts
-
-`type`<br>
-Type of button to show: `watch`, `fork`, or `follow`
+`name`<br>
+Subreddit name (the part after /r/ in the URL)<br>
 
 ### Optional
 
 `count`<br>
-Show the optional watchers or forks count: *none* by default or `true`
+Optional flag to hide the subcriber count: set to `false`
 
 `size`<br>
-Optional flag for using a larger button: *none* by default or `large`
+Optional flag for using a larger button: set to `large`
+
+`r`<br>
+Optional flag to hide "/r/" from being displayed before the name: set to `false`
 
 
 
 Examples
 --------
 
-**Basic Watch button**
+**Basic button**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=BasketballGM"
+  allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
 ```
 
-**Basic Fork button**
+**Large button**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=fork"
-  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=BasketballGM&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="225" height="30"></iframe>
 ```
 
-**Basic Follow button**
+**Button with /r/ hidden**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow"
-  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=BasketballGM"
+  allowtransparency="true" frameborder="0" scrolling="0" width="130" height="20"></iframe>
 ```
 
-**Watch with count**
+**Button with no subscriber count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=BasketballGM"
+  allowtransparency="true" frameborder="0" scrolling="0" width="125" height="20"></iframe>
 ```
 
-**Fork with count**
+**Large button with /r/ hidden and no subscriber count**
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=fork&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-```
-
-**Follow with count**
-
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-```
-
-**Large Watch button with count**
-
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+<iframe src="http://ghbtns.com/subreddit-btn.html?name=BasketballGM&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="160" height="20"></iframe>
 ```
 
 Limitations
@@ -95,7 +80,7 @@ Limitations
 
 For the first version, functionality is limited and some concessions were made:
 
-- Width and height must be specificed for all buttons (which actually adds some control for those with OCD like myself).
+- Width and height must be specificed for all buttons, and you will probably have to customize the width based on the length of your subreddit's name.
 - All attributes must be passed through via URL parameters.
 - CSS and javascript are all included in the same HTML file to reduce complexity and requests.
 
@@ -104,8 +89,8 @@ For the first version, functionality is limited and some concessions were made:
 In order to avoid `insecure content` warnings when using GitHub Buttons on a page behind an SSL certificate, simply host a copy of the `github-btn.html` file on your secure directory and substitute your domain in the iframe include: 
 
 ``` html
-<iframe src="https://YOURDOMAIN.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+<iframe src="https://YOURDOMAIN.com/github-btn.html?name=SUBREDDIT"
+  allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
 ```
 
 More refinement and functionalty is planned with open-sourcing--any help is always appreciated!
@@ -115,21 +100,19 @@ More refinement and functionalty is planned with open-sourcing--any help is alwa
 Bug tracker
 -----------
 
-Have a bug? Please create an issue here on GitHub at https://github.com/mdo/github-buttons/issues.
-
-
-
-Twitter account
----------------
-
-Keep up to date on announcements and more by following Mark on Twitter, <a href="http://twitter.com/mdo">@mdo</a>.
+Have a bug? Please create an issue here on GitHub at https://github.com/jdscheff/subreddit-buttons/issues.
 
 
 
 Authors
 -------
 
-**Mark Otto**
+Made by Jeremy Scheff
+
++ http://www.jeremyscheff.com/
++ http://github.com/jdscheff
+
+Heavily based on [GitHub Buttons](https://github.com/mdo/github-buttons) by Mark Otto
 
 + http://twitter.com/mdo
 + http://github.com/mdo
@@ -138,6 +121,8 @@ Authors
 
 Copyright and license
 ---------------------
+
+Copyright 2013 Jeremy Scheff.
 
 Copyright 2011 Mark Otto.
 

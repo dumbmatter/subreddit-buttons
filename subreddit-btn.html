@@ -1,0 +1,206 @@
+<html><body><style type="text/css">
+body {
+  padding: 0;
+  margin: 0;
+  font: bold 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+.github-btn {
+  height: 20px;
+  overflow: hidden;
+}
+.gh-btn,
+.gh-count,
+.gh-ico {
+  float: left;
+}
+.gh-btn,
+.gh-count {
+  padding: 2px 5px 2px 4px;
+  color: #555;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.gh-btn {
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#eaeaea));
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -ms-linear-gradient(#fafafa, #eaeaea);
+  background-image: -o-linear-gradient(#fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-repeat: no-repeat;
+  border: 1px solid #d4d4d4;
+  border-bottom-color: #bcbcbc;
+}
+.gh-btn:hover,
+.gh-btn:focus,
+.gh-btn:active {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  border-color: #518cc6 #518cc6 #2a65a0;
+  background-color: #3072b3;
+}
+.gh-btn:hover,
+.gh-btn:focus {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+  background-image: -webkit-linear-gradient(#599bdc, #3072b3);
+  background-image: -moz-linear-gradient(top, #599bdc, #3072b3);
+  background-image: -ms-linear-gradient(#599bdc, #3072b3);
+  background-image: -o-linear-gradient(#599bdc, #3072b3);
+  background-image: linear-gradient(#599bdc, #3072b3);
+}
+.gh-btn:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+     -moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+          box-shadow: inset 0 2px 5px rgba(0,0,0,.10);
+}
+.gh-ico {
+  width: 15px;
+  height: 15px;
+  margin-top: -1px;
+  margin-right: 4px;
+  vertical-align: middle;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAtCAYAAAC0wKvmAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsLEx4rpDjI9wAABWZJREFUWMPtV21MU2cUfnp76aXl3tvbD7rREdzoBrKAky3GyZKxxOAyZSnG6ZJNk338cL+ILtlGUJcsjDjRTLOomxARNWQ/iMEAySDOj9kRjZrhhlknRKHCOgRKu9IWent7z37Ur4IoMP9s8UlOcs977vuc955z3pNzgf86NA8y8jqkRmR8DQ3+Eo24GgvjRYsBvDeISwqhYTYOmAcZIwqWg0HgteVoCYxzi+wCMjzDobUcizceyecxQAUHPH9b51h8bNKjntXO3sH0EIkWO5TYIiiKHTH5I2hT6qATuiE+dQlDXcqcc5DpwAt/D+J9RYV3QtVGn+DjC6qrqjZn2SwwmyQMDfvwh2cQX1bv2B+QtT16Js6xDOzGTBwavIZfH+rBzqM64LlMVgNctTu3EcXHLxCpsWkSH79Qu3MbWQ1wBTyXyc6jelafkG1CZb4NuzrbjhCRGqPGozHi02LkOpMgdp1J6I1HY0RqrLPtCOXbsCvbhMpZ5fF6SLo4FEJe0ar1ifjyPODIBtLSEm+kpSV0ngcAFK1arwyFkHc9JF2cdSIcZuy4b1hmEIcZO+ZQiYAnAGHkykn29uLp4w3saM85NjruY0d7zrGnjzfcsY1cOcl6AhBm64AFAEVkap55qeTJiyeOrc57dbWy0LEA3x9rhaKoYFkGb5WWAADcZ5vZJSVrmhWRqUFAnWPBirCzWux1mLG7s/UQjbrP0ti1CzTqPkudrYfIYcZuVou9EGH/d72IE/MRn3xZo8i2FAb6mIoJYnXD0KaeRzR4BY/xGP8/aOe57zMARQAIwE0AqiAIHxoMhhOpqamfpqSkjMiyfHm+hzICGADwCYCWW88/W63W8NDQEHm9XrJYLAEAlvk6eBdA7ZRuULZ48WI/3UJBQYEPQN6dZjdHrAHw3T06AWjt7+8f3LBhg1ZVVQwMDAwCuDqf06cB+BNAyn1segDv3BL9XIlFAM8B2AzgBwDZMziZ9WSnBbDcZDK9R0TFer0+NSMjQ9FqtRwRQVGUqMfj4RiGGY5EIs0TExONAH6bsSqsVutRQRD8NputG8BmURT7li1b5mtsbFTHxsZoJvT19VFNTU00MzMzIEnSjxzHbbJYLH1Go3HYZDJ9BYCFxWJprqioiEajUdq4cSNlZWWpLpeL5gJFUaiuri4uSZJaX19PwWCQnE5nSBTFzyEIQjAej9P27dtpxYoVFAwGk3dPhGZmnmJzu93kcDios7OTent7KT09/XdIkuQ9deoU5ebmJpNHxok+WEhUaiD6dtN08m2lRG8aiCpWEKnqneWuri7Kzc2llpYWstlsJ6HT6dbabLbogQMHkgkudRCVSUQlIHIKyTb/TSKnmLCVGYlGBpLMpaWlxPP8OIBCRpblJo1G07t06dLk1D9bCLApAC8BhSVTywJIzwQEE2DOSMg9KC4uJlmWvwHQxQKARqMZi0QiU0jSgSPXgKF+4On8KcXNAPt/AQZ7gMwcgEnumeFwWFEU5ebdWySKX1RWVk7QI0JBQYEfwJJ7nZokSfK53e5p5bdv3z6anJycRuLz+ejgwYPT1hsaGmJms/l80mQHwB8Khd4uLi4+1t7eLhYWFibmSoZBT08PcnJysHLlSmg0GnAcB7/fj46ODmzdujUpNIcPH46Xl5f7gsFg2Uy3ulgUxbEtW7ZMhkJ3a9zr9VJbWxtVVVXRnj17qL29nQKBQNKNdjqdQaPR6AaQ+bD+ZBUEoVYQhPF169b5m5qa6MaNG0lhiMfj1N3dTbW1tfGioqJRnud9HMeV368BPug3lgewSpKk11mWfUWWZassy3oApNPpwhzHeSKRyE/hcLgNgAtA/PEEMi/8A6rA9LSTeRvZAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.gh-count {
+  position: relative;
+  display: none; /* hidden to start */
+  margin-left: 4px;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+}
+.gh-count:hover,
+.gh-count:focus {
+  color: #4183C4;
+}
+.gh-count:before,
+.gh-count:after {
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.gh-count:before {
+  top: 50%;
+  left: -3px;
+  margin-top: -4px;
+  border-width: 4px 4px 4px 0;
+  border-right-color: #fafafa;
+}
+.gh-count:after {
+  top: 50%;
+  left: -4px;
+  z-index: -1;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #d4d4d4;
+}
+.github-btn-large {
+  height: 30px;
+}
+.github-btn-large .gh-btn,
+.github-btn-large .gh-count {
+  padding: 3px 10px 3px 8px;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+}
+.github-btn-large .gh-ico {
+  width: 24px;
+  height: 23px;
+  background-position: 0 -20px;
+}
+.github-btn-large .gh-count {
+  margin-left: 6px;
+}
+.github-btn-large .gh-count:before {
+  left: -5px;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+}
+.github-btn-large .gh-count:after {
+  left: -6px;
+  margin-top: -7px;
+  border-width: 7px 7px 7px 0;
+}
+@media (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .gh-ico {
+    background-image: url(data:image/png;base64,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);
+    background-size: 24px 45px;
+  }
+}
+</style>
+<span class="github-btn" id="github-btn">
+  <a class="gh-btn" id="gh-btn" href="#" target="_blank">
+    <span class="gh-ico"></span>
+    <span class="gh-text" id="gh-text"></span>
+  </a>
+  <a class="gh-count" id="gh-count" href="#" target="_blank"></a>
+</span>
+<script type="text/javascript">
+  // Read a page's GET URL variables and return them as an associative array.
+  // Source: http://jquery-howto.blogspot.com/2009/09/get-url-parameters-values-with-jquery.html
+  var params = function () {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++) {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+    return vars;
+  }()
+  var name = params.name,
+      count = params.count,
+      size = params.size,
+      r = params.r,
+      head = document.getElementsByTagName('head')[0],
+      button = document.getElementById('gh-btn'),
+      mainButton = document.getElementById('github-btn'),
+      text = document.getElementById('gh-text'),
+      counter = document.getElementById('gh-count');
+
+
+  // Add commas to numbers
+  function addCommas(n) {
+    return String(n).replace(/(\d)(?=(\d{3})+$)/g, '$1,')
+  }
+
+  function jsonp(path) {
+    var el = document.createElement('script');
+    el.src = path + '?jsonp=callback';
+    head.insertBefore(el, head.firstChild);
+  }
+
+  function callback(obj) {
+    // Show the count if asked
+    if (count !== 'false') {
+      counter.innerHTML = addCommas(obj.data.subscribers);
+      counter.href = 'http://www.reddit.com/r/' + name + '/';
+      counter.style.display = 'block';
+    }
+  }
+
+  // Set href to be URL for repo
+  button.href = 'http://www.reddit.com/r/' + name + '/';
+  text.innerHTML = (r !== 'false' ? '/r/' : '') + name;
+
+  // Change the size
+  if (size == 'large') {
+    mainButton.className += ' github-btn-large';
+  }
+
+  jsonp('http://www.reddit.com/r/' + name + '/about.json');
+</script></body></html>
