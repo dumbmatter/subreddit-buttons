@@ -57,8 +57,8 @@ Examples
 **Button with /r/ hidden**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
-  allowtransparency="true" frameborder="0" scrolling="0" width="130" height="20"></iframe>
+<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&r=false"
+  allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
 ```
 
 **Button with no subscriber count**
@@ -71,8 +71,8 @@ Examples
 **Large button with /r/ hidden and no subscriber count**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="160" height="20"></iframe>
+<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large&count=false&r=false"
+  allowtransparency="true" frameborder="0" scrolling="0" width="160" height="30"></iframe>
 ```
 
 Limitations
