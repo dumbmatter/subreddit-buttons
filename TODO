@@ -1,2 +1,6 @@
 test browser compatibility
 compress subreddit-btn.html code
+
+Reddit pull request:
+1. Add the HTML file that is included by the iframe in the [static](https://github.com/reddit/reddit/tree/master/r2/r2/public/static) folder.
+2. Edit [this](https://github.com/reddit/reddit/blob/master/r2/r2/templates/buttondemopanel.html) to have instructions/examples displayed.
