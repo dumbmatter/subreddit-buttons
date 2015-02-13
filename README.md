@@ -44,14 +44,14 @@ Examples
 
 ``` html
 <iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
-  allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
+  allowtransparency="true" frameborder="0" scrolling="0" width="160" height="20"></iframe>
 ```
 
 **Large button**
 
 ``` html
 <iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="225" height="30"></iframe>
+  allowtransparency="true" frameborder="0" scrolling="0" width="235" height="30"></iframe>
 ```
 
 **Button with /r/ hidden**
