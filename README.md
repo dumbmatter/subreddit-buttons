@@ -3,7 +3,7 @@ UNOFFICIAL SUBREDDIT BUTTONS
 
 Showcase your subreddit's success with these simple, static buttons featuring dynamic subscriber counts and a link to your subreddit.
 
-To get started, checkout http://jdscheff.github.io/subreddit-buttons/
+To get started, checkout http://dumbmatter.github.io/subreddit-buttons/
 
 This is based on Mark Otto's GitHub buttons: https://github.com/mdo/github-buttons
 
@@ -15,7 +15,7 @@ Usage
 These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=SUBREDDIT"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=SUBREDDIT"
   allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
 ```
 
@@ -43,35 +43,35 @@ Examples
 **Basic button**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
   allowtransparency="true" frameborder="0" scrolling="0" width="160" height="20"></iframe>
 ```
 
 **Large button**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="235" height="30"></iframe>
 ```
 
 **Button with /r/ hidden**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&r=false"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&r=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
 ```
 
 **Button with no subscriber count**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
   allowtransparency="true" frameborder="0" scrolling="0" width="125" height="20"></iframe>
 ```
 
 **Large button with /r/ hidden and no subscriber count**
 
 ``` html
-<iframe src="http://jdscheff.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large&count=false&r=false"
+<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large&count=false&r=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="160" height="30"></iframe>
 ```
 
@@ -100,7 +100,7 @@ More refinement and functionalty is planned with open-sourcing--any help is alwa
 Bug tracker
 -----------
 
-Have a bug? Please create an issue here on GitHub at https://github.com/jdscheff/subreddit-buttons/issues.
+Have a bug? Please create an issue here on GitHub at https://github.com/dumbmatter/subreddit-buttons/issues.
 
 
 
@@ -109,8 +109,8 @@ Authors
 
 Made by Jeremy Scheff
 
-+ http://www.jeremyscheff.com/
-+ http://github.com/jdscheff
++ http://dumbmatter.com/
++ http://github.com/dumbmatter
 
 Heavily based on [GitHub Buttons](https://github.com/mdo/github-buttons) by Mark Otto
 
