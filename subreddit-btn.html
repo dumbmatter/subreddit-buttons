@@ -188,13 +188,13 @@ body {
     // Show the count if asked
     if (count !== 'false') {
       counter.innerHTML = addCommas(obj.data.subscribers);
-      counter.href = 'http://www.reddit.com/r/' + name + '/';
+      counter.href = '//www.reddit.com/r/' + name + '/';
       counter.style.display = 'block';
     }
   }
 
   // Set href to be URL for repo
-  button.href = 'http://www.reddit.com/r/' + name + '/';
+  button.href = '//www.reddit.com/r/' + name + '/';
   text.innerHTML = (r !== 'false' ? '/r/' : '') + name;
 
   // Change the size
@@ -202,5 +202,5 @@ body {
     mainButton.className += ' github-btn-large';
   }
 
-  jsonp('http://www.reddit.com/r/' + name + '/about.json');
+  jsonp('//www.reddit.com/r/' + name + '/about.json');
 </script></body></html>

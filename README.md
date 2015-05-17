@@ -43,35 +43,35 @@ Examples
 **Basic button**
 
 ``` html
-<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
+<iframe src="//dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
   allowtransparency="true" frameborder="0" scrolling="0" width="160" height="20"></iframe>
 ```
 
 **Large button**
 
 ``` html
-<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
+<iframe src="//dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="235" height="30"></iframe>
 ```
 
 **Button with /r/ hidden**
 
 ``` html
-<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&r=false"
+<iframe src="//dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&r=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
 ```
 
 **Button with no subscriber count**
 
 ``` html
-<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM"
+<iframe src="//dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&count=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="125" height="20"></iframe>
 ```
 
 **Large button with /r/ hidden and no subscriber count**
 
 ``` html
-<iframe src="http://dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large&count=false&r=false"
+<iframe src="//dumbmatter.github.io/subreddit-buttons/subreddit-btn.html?name=BasketballGM&size=large&count=false&r=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="160" height="30"></iframe>
 ```
 
